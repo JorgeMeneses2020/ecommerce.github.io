@@ -592,7 +592,7 @@ header {
 
 /*INICIO RESPONSIVE */
 
-@media(max-width:400px){
+@media(max-width:640px){
     header{
         grid-template-columns: 70% 25%;
     }
