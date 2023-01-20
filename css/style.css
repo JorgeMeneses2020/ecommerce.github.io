@@ -1,0 +1,784 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.box-mayor {
+    width: 100%;
+    height: 100%;
+
+}
+
+#container {
+    width: 80%;
+}
+
+/* INICIO ENCABEZADO */
+header {
+
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 25px 0 0px 0;
+    margin-bottom: 0.3%;
+
+}
+#hamburguesa{
+    display:none;
+}
+
+#logo-menu {
+    display: block;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* line-height: 50px; */
+}
+
+#logo {
+    width: 100%;
+}
+
+#logo img {
+    width: 110px;
+}
+
+#menu {
+    width: 100%;
+    height: 100%;
+    display: block;
+    list-style: none;
+    /* line-height: 40px; */
+
+}
+
+#menu li {
+
+    height: 100%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#menu li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: rgb(118, 116, 116);
+    font-size: 15px;
+
+}
+
+#menu li a:hover {
+    border-bottom: solid #ED7C2B;
+    color: black;
+}
+#menu2{
+    display: none;
+}
+
+#car-profile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-left: 7.6em;
+}
+
+
+
+#car img {
+
+    line-height: 100%;
+}
+
+#profile {
+    width: 100%;
+}
+
+#profile img {
+    width: 40px;
+}
+
+/* FIN ENCABEZADO */
+
+
+
+
+
+/* INICIO CONTENT */
+
+#content {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* INICIO CARRUSEL2 */
+#carrusel2 {
+
+    width: 90%;
+    max-width: 120em;
+    padding: 2em 2em 2em 0;
+    overflow: hidden;
+    opacity: 1 !important;
+
+}
+
+#carrusel2 .grande2 {
+    width: 450%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 2em 0.1em 0;
+    transition: all 0.5s ease;
+    transform: translateX(0%)
+}
+
+#carrusel2 .img {
+    width: calc(100%/4);
+    min-height: 10vh;
+    margin: 0 4em 0 4em;
+    border-radius: 10px;
+}
+
+.opacity {
+    background-color: rgba(0, 0, 0, 0.96);
+    opacity: .9;
+    filter: brightness(40%);
+}
+
+#carrusel2 .close {
+    display: block;
+    padding-left: 400px;
+    width: 20px;
+    height: 20px;
+
+
+}
+
+#carrusel2 .close img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(300%);
+}
+
+#carrusel2 .img:first-child {
+    margin-left: 2em;
+}
+
+#carrusel2 .img:last-child {
+    margin-left: 4em;
+}
+
+#carrusel2 .puntos {
+    width: 100%;
+    padding: .4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#carrusel2 .punto2 {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#carrusel2 .punto2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#carrusel2 .punto2.active {
+    background-color: orange !important;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: solid rgb(254, 98, 0);
+
+}
+
+
+/* FIN CARRUSEL2 */
+/* INICIO CARRUSEL */
+#carrusel {
+
+    width: 90%;
+    max-width: 120em;
+    padding: 2em 2em 2em 0;
+    overflow: hidden;
+
+
+}
+#carrusel .previus2{
+    display: none;
+}
+#carrusel .next2{
+    display: none;
+}
+
+#carrusel .grande {
+    width: 450%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 2em 0.1em 0;
+    transition: all 0.5s ease;
+    transform: translateX(0%)
+}
+
+#carrusel .img {
+    width: calc(100%/4);
+    min-height: 10vh;
+    margin: 0 4em 0 4em;
+    border-radius: 10px;
+}
+
+
+#carrusel .img:first-child {
+    margin-left: 2em;
+}
+
+#carrusel .img:last-child {
+    margin-left: 4em;
+}
+
+#carrusel .puntos {
+    width: 100%;
+    padding: .4em;
+    margin: 1em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#carrusel .punto {
+    width: 4em;
+    height: 4em;
+    margin: 0.5em;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+#carrusel .punto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#carrusel .punto.active {
+    background-color: orange !important;
+    border-radius: 10px;
+    opacity: 0.7;
+    border: solid rgb(254, 98, 0);
+
+}
+
+
+/* FIN CARRUSEL2 */
+/*INICIO info */
+#info {
+    padding: 7em 0 2em 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#info h4 {
+    color: #ED7C2B;
+}
+
+#info h1 {
+    margin-top: .5em;
+}
+
+#info p {
+    color: rgb(133, 130, 130);
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 1.5em;
+    padding: 1em 5em 1.3em 0;
+}
+
+#precio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 10%;
+}
+
+#precio h2 {
+    width: 20%;
+    margin: 0;
+}
+
+#precio span {
+
+    background-color: #FEF0E3;
+    height: 55%;
+    margin-top: 3px;
+    color: #ea832e;
+    font-weight: 700;
+    padding: 4px 8px 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-left: 1em;
+
+}
+
+#precio del {
+    color: #B5B7BC;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+#controls {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    margin-top: 30px;
+    /* display: grid; */
+    /* grid-template-columns: 70% 30%; */
+}
+
+#controls .button {
+    border: none;
+    background-color: #F7F8FD;
+    padding: 11px 10px;
+    color: #FF7D1B;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+#controls .button h2 {
+    width: 100%;
+}
+
+/* .cantidad{
+    background-color:#F7F8FD ;
+    border-radius: 10px;
+    width: 20%;
+    margin: 0;
+
+} */
+.cantidad {
+    margin: 0;
+    width: 30%;
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+
+#controls input {
+    background-color: #F7F8FD;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+#controls #btn-add {
+    margin: 0 0 0 10px;
+    width: 60%;
+    border: none;
+    background-color: #FF7D1B;
+    border-radius: 8px;
+    color: #FEF0E3;
+    font-weight: bold;
+}
+
+#controls #btn-add img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+/*FIN info */
+/*Inicio Carrito */
+#box-car {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 22%;
+    border-radius: 10px;
+    max-height: 12em;
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 5em;
+    right: 7em;
+    transition: all 1s ease;
+    transform: translateY(0%);
+}
+
+#box-car h5 {
+    width: 100%;
+    margin: 1.2em 0 1.3em 1.5em;
+}
+
+#box-car hr {
+    color: rgb(250, 247, 247);
+}
+
+#producto-car {
+    width: 90%;
+    padding: 0.7em;
+
+}
+ 
+#car{
+    padding-top: 10px;
+}
+#producto-car .img-producto {
+    width: 15%;
+    margin: 0;
+    z-index: 1;
+}
+
+#producto-car {
+    display: none;
+    flex-flow: nowrap;
+    justify-content: flex-start;
+}
+
+#producto-car .img-producto img {
+    width: 100%;
+
+}
+
+#producto-car .info-producto {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+.text {
+    margin: 0px 10px 10px 20px;
+}
+
+.text p {
+    font-size: 12px;
+    margin-bottom: .5em;
+    color: rgb(145, 144, 144);
+    font-weight: 300;
+}
+
+.text span {
+    color: rgb(145, 144, 144);
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.text b {
+    font-size: 14px;
+}
+
+#button {
+    display: none;
+    width: 100%;
+    margin: 0px 0 10px 0;
+}
+
+.trash {
+    padding-top: 10px;
+}
+
+#button button {
+    display: block;
+    width: 88%;
+    border: none;
+    padding: 15px 20px 15px 20px;
+    background-color: #FF7D1B;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+
+}
+
+.empty {
+    display: block;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.empty p {
+    font-size: 12px;
+    color: rgb(92, 89, 89);
+}
+
+#cantidad {
+    display: none;
+    z-index: 10;
+    height: 20%;
+    width: 15%;
+    margin-bottom: -5px;
+    font-weight: bold;
+    background-color: #FF7D1B;
+    border-radius: 8px;
+    padding: 0.05em 0.45em 0.05em 0.45em;
+    font-size: 10px;
+    color: #FEF0E3;
+}
+
+#carrusel2 {
+
+    display: none;
+    z-index: 10;
+    position: absolute;
+    width: 35%;
+    top: 53px;
+    left: 458px;
+
+}
+
+
+#carrusel2 .previus {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    top: 255px;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 0.9em;
+    border-radius: 100%;
+}
+
+#carrusel2 .previus img {
+    width: 80%;
+    height: 100%;
+}
+
+#carrusel2 .next {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    top: 255px;
+    left: 426px;
+    height: 20px;
+    width: 20px;
+    padding: 0.9em;
+    border-radius: 100%;
+}
+
+#carrusel2 .next img {
+    width: 90%;
+    height: 100%;
+}
+
+/* Fin Carrito */
+
+/* FIN CONTENT */
+
+/*INICIO RESPONSIVE */
+
+@media(max-width:400px){
+    header{
+        grid-template-columns: 70% 25%;
+    }
+#menu{
+    display: none;
+}
+#logo {
+    width: 100%;
+    padding-top: 12px;
+  }
+#hamburguesa{
+    display:block;
+    padding-top:12px ;
+}
+#hamburguesa img{
+    width: 100%;
+}
+#car-profile {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 44% 25%;
+    padding-left: 0.6em;
+  }
+  #profile img {
+    width: 23px;
+    padding-top: 8px;
+    padding-left: 15px;
+  }
+  #menu2{
+   
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 60%;
+    padding: 20px;
+    z-index: 40;
+    height: 100%;
+}
+
+#menu2 ul{
+    display: block;
+    list-style: none;
+    margin-top: 40px;
+    
+}
+#menu2 ul li{
+    
+    padding:20px 0px
+}
+#menu2 ul li a{
+    text-decoration: none;
+    color: #151619;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.btn-close{
+    display: block;
+    width: 7%;
+    margin: 0;
+}
+#container{width: 100%;}
+#content{
+    width: 100%;
+    display: block;
+}
+#carrusel{
+    display: block;
+    width: 100%;
+    padding: 0em 2em 0em 0;
+    }
+#carrusel .puntos{
+    display:none;
+}
+hr{
+    display: none;
+}
+#carrusel .previus2{
+    display: block;
+    z-index: 30;
+    position: absolute;
+    background-color: #F7F8FD;
+    width: 8px;
+    height: 11px;
+    padding: 5px 8px 9px 6px;
+    border-radius:100%;
+    top: 200px;
+    margin-left: 10px;
+
+}
+#carrusel .previus2 img{
+    width: 100%;
+    height: 100%;
+}
+#carrusel .next2 img{
+    width: 100%;
+    height: 100%;
+}
+#carrusel .next2{
+    display: block;
+    z-index: 30;
+    position: absolute;
+    background-color: #F7F8FD;
+    width: 8px;
+    height: 11px;
+    padding: 5px 6px 9px 8px;
+    border-radius:100%;
+    top: 200px;
+    margin-left: 261px;
+    
+}
+#carrusel .img {
+    width: calc(100%/4);
+    height: 100%;
+    border-radius: 0px;
+    margin: 0;
+  }
+  #carrusel .img:first-child {
+    margin-left: 0;
+  }
+  #carrusel .grande {
+    width: 490%;
+    height: 265px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0em 2em 0.1em 0;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+
+  #info{
+    padding: 1em 0 2em 1em;
+  }
+  #precio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 43% auto;
+  }
+  #controls {
+    width: 100%;
+    display: block;  
+    margin-top: 30px;
+    
+  }
+  .cantidad {
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+  }
+  #controls #btn-add {
+    width: 95%;
+    margin:20px 0  ;
+    height: 46px;
+    border: none;
+    background-color: #FF7D1B;
+    border-radius: 8px;
+    color: #FEF0E3;
+    font-weight: bold;
+
+}
+#box-car {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 95%;
+    border-radius: 10px;
+    max-height: 12em;
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 6em;
+    z-index: 50;
+    right: 0.55em;
+    transition: all 1s ease;
+    transform: translateY(0%);}
+    .empty {
+        display: block;
+        width: 100%;
+        height: 134px;
+        text-align: center;
+        line-height: 105px;
+      }
+}
+
+/*FIN RESPONSIVE */
